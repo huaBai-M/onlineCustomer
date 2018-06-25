@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			iframe,body,html{
+				margin: 0;
+				padding: 0;
+				border: none;
+			}
+			iframe{
+				position: fixed;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<ul style="height: 1000px;">
+			<li>a</li>
+		</ul>
+		<iframe src="index.html" width="100%" height="100%" scrolling="no"></iframe>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("iframe").height($(document).height())
+			$("iframe").width($(document).width())
+		</script>
+	</body>
+</html>

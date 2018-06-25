@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>在线客服新版</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<style type="text/css">
+			img{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body style="height: 60000px;">
+		<ul class="newXinrongSidebar" style="right: 10px;">
+			<li>
+				<a href="javascript:void(0)">
+					<img src="img/xinrongConsultation.png"/>
+					<p>在线咨询</p>
+				</a>
+			</li>
+			<li class="click_newXinrongMessage">
+				<a href="javascript:void(0)">
+					<img src="img/xinrongWord.png"/>
+					<p>在线留言</p>
+				</a>
+			</li>
+			<li  class="freePhone">
+				<a href="javascript:void(0)">
+					<img src="img/xinrongTel.png"/>
+					<p>免费电话</p>
+				</a>
+				<div class="freePhoneHover">
+					<div class="freePhoneBox">
+						<i class="freePhoneBox_left"></i>
+						<i class="freePhoneBox_right"></i>
+						<!--开始前-->
+						<div class="freePhoneBoxInput">
+							<input type="text" placeholder="输入您的电话"/>
+							<button>点击免费通话</button>
+							<i></i>
+							<div>
+								<p>
+									请输入<span>您的电话号码</span> 企业将自动回拨给您
+								</p>
+								<p>
+									输入格式：<br />手机 158******60<br />固话 0105****8
+								</p>
+							</div>
+						</div>
+						<!--拨号中-->
+						<div class="freePhoneBoxConduct">
+							<p>正在呼叫</p>
+							<p>
+								<span>您将接收到</span><br />
+								<span>01053932409</span><br />
+								<span>回拨电话</span>
+							</p>
+							<p>请稍后...</p>
+						</div>
+						<!--失败-->
+						<div class="freePhoneBoxError">
+							<p>出错啦</p>
+							<p>
+								<span>暂无在线客服</span><br />
+							</p>
+							<p><a href="javascript:void(0)" class="freePhoneBoxReturn">&lt;返回</a></p>
+						</div>
+						<div class="freePhoneBoxSucce">
+							<p>呼叫成功</p>
+							<p>
+								<span>请注意接听</span><br />
+								<span>01053932409</span><br />
+							</p>
+							<p><a href="javascript:void(0)" class="freePhoneBoxReturn">&lt;返回</a></p>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		
+		<!--留言板-->
+		
+		<div class="newXinrongMessage">
+			<div class="newXinrongMessage_top">
+				<a href="javascript:void(0)" class="del_newXinrongMessage"><img src="img/del.png" /></a>
+			</div>
+			<h2>请留言我们经尽快联系您</h2>
+			<textarea placeholder="请留言："></textarea>
+			<h2>请务必留下您的联系方式，方便我们联系您</h2>
+			<ul class="newXinrongMessage_bottom">
+				<li>
+					<label for="newXinrongMessageName">姓名：</label>
+					<input type="text" id="newXinrongMessageName" placeholder="必填"/>
+				</li>
+				<li>
+					<label for="newXinrongMessageTel">手机：</label>
+					<input type="text" id="newXinrongMessageTel" placeholder="必填"/>
+				</li>
+				<li>
+					<label for="newXinrongMessageEmail">邮箱：</label>
+					<input type="text" id="newXinrongMessageEmail"placeholder="必填" />
+				</li>
+			</ul>
+			<button>提交</button>
+		</div>
+		
+		<!--中间弹出框-->
+		<div class="newXinrongCenter">
+			<h1><a href="javascrip:void(0)" class="newXinrongCenterDel"><img src="img/center_del.png"/></a></h1>
+			<div class="newXinrongCenter_txt">
+				<h1>最新报价</h1>
+				<h2><span>3月23日</span>优惠报价单</h2>
+			</div>
+			<div class="newXinrongCenter_txt_bottom">
+				<div href="javascript:void(0)" class="newXinrongCenter_txt_bottomLeft">
+					<a href="javascript:void(0)">
+						<img src="img/center_Consultation.png"/>
+						点击报价
+					</a>
+				</div>
+				<div class="newXinrongCenter_txt_bottomRight">
+					<a href="javascript:void(0)">
+						<img src="img/center_tel.png"/>
+						免费电话
+					</a>
+					<div class="newXinrongCenter_tel">
+						<div class="newXinrongCenter_telBox">
+							<i></i>
+							<div class="newXinrongCenter_telBoxT">
+								<!--呼叫前-->
+								<div class="newXinrongCenterInput">
+									<input type="text" placeholder="输入您的电话"/>
+									<button>点击免费通话</button>
+									<p>请输入<span>您的电话号码</span>企业将自动回拨给您</p>
+									<p>输入格式：手机 158******60 固话0105****8</p>
+								</div>
+								<!--呼叫中-->
+								<div class="newXinrongCenterConduct">
+									<p>正在呼叫</p>
+									<p><span>您将接收到 01053932409 回拨电话</span></p>
+									<p>请稍后...</p>
+								</div>
+								<!--出错啦-->
+								<div class="newXinrongCenterError">
+									<p>出错啦</p>
+									<p><span>暂无在线客服</span></p>
+									<p><a href="javascript:void(0)" class="newXinrongCenterReturn">&lt;返回</a></p>
+								</div>
+								<!--呼叫成功-->
+								<div class="newXinrongCenterSucce">
+									<p>呼叫成功</p>
+									<p>
+										<span>请注意接听 01053932409</span>
+									</p>
+									<p><a href="javascript:void(0)" class="newXinrongCenterReturn">&lt;返回</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/drag.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">//拖拽
+			$('.newXinrongMessage').each(function(index) {
+				$(this).myDrag({
+					parent: '.test',
+					randomPosition: false,
+					direction: 'all'
+				});
+			});
+			//侧边呼叫前
+			$(".freePhoneHover").css("height","270px");
+			$(".freePhoneBoxInput").show().siblings("div").hide();
+			
+			//侧边呼叫中
+			$(".freePhoneHover").css("height","157px");
+			$(".freePhoneBoxConduct").show().siblings("div").hide();
+			
+			//侧边呼叫错误
+			$(".freePhoneHover").css("height", "157px");
+			$(".freePhoneBoxError").show().siblings("div").hide();
+			
+			//侧边呼叫成功
+			$(".freePhoneHover").css("height", "157px");
+			$(".freePhoneBoxSucce").show().siblings("div").hide();
+			
+			//中间呼叫前
+			$(".newXinrongCenterInput").show().siblings("div").hide();
+			
+			//中间呼叫中
+			$(".newXinrongCenterConduct").show().siblings("div").hide();
+			
+			//中间呼叫错误
+			$(".newXinrongCenterError").show().siblings("div").hide();
+
+			//中间呼叫成功
+			$(".newXinrongCenterSucce").show().siblings("div").hide();
+			
+			//判断左右位置
+			$(function(){
+				if($(".newXinrongSidebar").css("left") == "10px") {
+					$(".freePhoneHover").css("left", "70px");
+					$(".newXinrongMessage").css("left", "90px");
+					$(".freePhoneBox_left").show();
+				} else if($(".newXinrongSidebar").css("right") == "10px") {
+					$(".freePhoneHover").css("right", "70px");
+					$(".newXinrongMessage").css("right", "90px");
+					$(".freePhoneBox_right").show();
+				}
+			})
+				
+			//打开留言框
+			$(".click_newXinrongMessage").click(function() {
+				if($(".newXinrongSidebar").css("left") == "10px") {
+					$(".newXinrongMessage").css("left", "90px");
+				} else if($(".newXinrongSidebar").css("right") == "10px") {
+					$(".newXinrongMessage").css("right", "90px");
+				}
+				$(".newXinrongMessage").animate({
+					bottom: "0px"
+				}, 200);
+			})
+			//关闭留言框
+			$(".del_newXinrongMessage").click(function() {
+				$(".newXinrongMessage").removeAttr("style");
+				$(".newXinrongMessage").animate({
+					bottom: "-600px"
+				}, 200);
+			})
+			//侧边呼叫返回
+			$(".freePhoneBoxReturn").click(function() {
+				$(".freePhoneHover").css("height", "270px");
+				$(".freePhoneBoxInput").show().siblings("div").hide();
+			})
+			//中间呼叫返回
+			$(".newXinrongCenterReturn").click(function(){
+				$(".newXinrongCenterInput").show().siblings("div").hide();
+			})
+			
+			//关闭中间弹出框
+			$(".newXinrongCenterDel").click(function(){
+				$(".newXinrongCenter").hide();
+			})
+		</script>
+		<!--<script type='text/javascript'> var xr_clientId = 25745; var syb_codeId = 8433; var xr_goUrl = 'http://d.jzl123.cn'; var qimoClientId = {nickName:'clientId:' + xr_clientId}; (function() { var kfm = document.createElement('script'); kfm.id = 'xr_kf_script'; kfm.setAttribute('charset', 'UTF-8'); kfm.src = xr_goUrl + '/public/js/xrkf.js?rnd=' + Math.random();  var kfs = document.getElementsByTagName('script')[0];   kfs.parentNode.insertBefore(kfm, kfs);})();</script><script>(function() {var urlTj = 'http://tj.wayboo.net.cn/TongJiCenter/js/tj.js';var script = document.getElementsByTagName('script');var ifHave = false; for (var i = 0; i < script.length; i++) {if(script[i].src.match(urlTj)){ifHave = true;break;}}if(!ifHave){var hm = document.createElement('script');hm.id = 'xr_tj_script'; hm.setAttribute('charset', 'UTF-8');hm.setAttribute('data_ci', 25745); hm.setAttribute('data_pt', 2); hm.src = urlTj + '?rnd=' + Math.random();var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);}})();</script></div>
+  -->
+	</body>
+</html>

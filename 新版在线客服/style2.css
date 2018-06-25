@@ -1,0 +1,230 @@
+@charset "UTF-8";
+.pageXinrong * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "微软雅黑";
+  font-weight: normal;
+  font-size: 14px;
+  font-style: normal;
+  box-sizing: border-box;
+  outline: none; }
+
+.pageXinrong .clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.pageXinrong .clearfix {
+  zoom: 1; }
+
+.pageXinrong {
+  width: 1020px;
+  margin: auto; }
+  .pageXinrong > h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #333;
+    padding-bottom: 50px; }
+    .pageXinrong > h1 > i {
+      display: block;
+      width: 35px;
+      height: 2px;
+      background: #4a8bfd;
+      margin: 20px auto 0; }
+  .pageXinrong .pageXinrong_box .pageXinrong_boxLeft {
+    width: 280px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    float: left; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxLeft > h2 {
+      font-size: 18px;
+      color: #4a8bfd;
+      font-weight: bold;
+      padding: 15px 0;
+      text-align: center;
+      border-bottom: 1px solid #eee; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .number {
+      font-size: 14px;
+      color: #999999;
+      padding: 20px 0;
+      text-align: center; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .number span {
+        color: #4a8bfd; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .form {
+      padding: 0 35px; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .form input {
+        width: 210px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: auto;
+        border: 1px solid #4a8bfd;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #666666; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .form button {
+        width: 210px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 10px auto 20px;
+        background: #4a8bfd;
+        border: 1px solid #4A8BFD;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .form button:hover {
+        background: #327bfd;
+        border: 1px solid #327bfd;
+        margin: 10px 0 20px; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state {
+      padding: 0 65px 35px;
+      color: #666666;
+      font-size: 14px; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .frontCall {
+        display: block; }
+        .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .frontCall span {
+          color: #327BFD; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .underwayCall {
+        font-size: 14px;
+        text-align: center;
+        display: none; }
+        .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .underwayCall p {
+          padding: 15px 0;
+          color: #327BFD; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .successCall {
+        text-align: center;
+        display: none; }
+        .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .successCall p {
+          padding: 10px 0;
+          color: #327BFD; }
+        .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .successCall a {
+          font-size: 14px;
+          text-decoration: none;
+          color: #666666; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .failCall {
+        text-align: center;
+        display: none; }
+        .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .failCall p {
+          padding: 10px 0;
+          color: #327BFD; }
+        .pageXinrong .pageXinrong_box .pageXinrong_boxLeft .state .failCall a {
+          font-size: 14px;
+          text-decoration: none;
+          color: #666666; }
+  .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle {
+    float: left;
+    width: 350px;
+    margin: 0 30px 0 50px; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle h2 {
+      font-size: 14px;
+      color: #999999;
+      display: flex;
+      align-items: center; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle h2 span {
+        color: red;
+        padding-right: 5px; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle input {
+      width: 100%;
+      height: 40px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      text-indent: 1em;
+      outline: none;
+      margin-bottom: 20px;
+      transition: all 0.5s step-start; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle input:focus, .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle textarea:focus {
+      border: 1px solid #327BFD; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle textarea {
+      width: 100%;
+      height: 140px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      text-indent: 1em;
+      max-width: 100%;
+      min-width: 100%;
+      padding-top: 10px;
+      transition: all 0.5s step-start; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle > p {
+      text-align: center;
+      margin-top: 36px; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle button {
+      width: 210px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      margin: 10px auto 20px;
+      background: #4a8bfd;
+      border: 1px solid #4A8BFD;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      margin: auto; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle button:hover {
+      background: #327bfd;
+      border: 1px solid #327bfd; }
+  .pageXinrong .pageXinrong_box .pageXinrong_boxRight {
+    float: left;
+    width: 300px; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxRight .pageXinrong_boxRightT {
+      width: 100%;
+      height: 138px;
+      text-align: center;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      padding: 23px 0; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxRight .pageXinrong_boxRightT button {
+        width: 210px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 10px auto 20px;
+        background: #4a8bfd;
+        border: 1px solid #4A8BFD;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxRight .pageXinrong_boxRightT button:hover {
+        background: #327bfd;
+        border: 1px solid #327bfd;
+        margin: 10px 0 20px; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxRight .pageXinrong_boxRightB {
+      width: 100%;
+      border: 1px solid #eee;
+      border-radius: 5px;
+      padding: 15px 15px 0;
+      margin-top: 22px; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxRight .pageXinrong_boxRightB > h3 {
+        padding: 0 0 15px 5px;
+        font-size: 14px;
+        color: #666666; }
+      .pageXinrong .pageXinrong_box .pageXinrong_boxRight .pageXinrong_boxRightB ul li {
+        color: #999999;
+        font-size: 12px;
+        padding-bottom: 15px;
+        cursor: pointer; }
+        .pageXinrong .pageXinrong_box .pageXinrong_boxRight .pageXinrong_boxRightB ul li span {
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: #4a8bfd;
+          margin-right: 10px; }
+
+@media (max-width: 750px) {
+  .pageXinrong {
+    width: 100%; }
+
+  .pageXinrong .pageXinrong_box {
+    width: 100%;
+    padding: 0 20px; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxLeft {
+      text-align: center; }
+    .pageXinrong .pageXinrong_box .pageXinrong_boxLeft, .pageXinrong .pageXinrong_box .pageXinrong_boxMiddle, .pageXinrong .pageXinrong_box .pageXinrong_boxRight {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px; } }
+
+/*# sourceMappingURL=style2.css.map */

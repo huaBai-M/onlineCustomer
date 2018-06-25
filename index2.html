@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style2.css"/>
+	</head>
+	<body>
+		<div class="pageXinrong">
+			<h1>如果您对此产品感兴趣，请留言或与企业免费通话<i></i></h1>
+			<div class="pageXinrong_box clearfix">
+				<div class="pageXinrong_boxLeft">
+					<h2>与企业免费通话</h2>
+					<p class="number">
+						无需话费，立即沟通！<br />
+					     （今日已有<span>591</span>人通话成功）
+					</p>
+					<p class="form">
+						<input type="tel" placeholder="在此输入您的手机号或电话"/>
+						<button>点击免费通话</button>
+					</p>
+					<ul class="state">
+						<li class="frontCall">
+							<p>
+								请输入您的<span>电话号码</span> <br />
+								企业将自动回拨给您
+							</p>
+							<p style="padding-top: 20px;">
+								输入格式：<br />
+								手机 158******60<br />
+								固话 0105****8<br />
+							</p>
+						</li>
+						<li class="underwayCall">
+							正在呼叫
+							<p>
+								您将接收到<br />
+								<span>01053932409</span><br />
+								回拨电话<br />
+							</p>
+							请稍后
+						</li>
+						<li class="successCall">
+							呼叫成功
+							<p>
+								<span>请注意接听</span><br />
+								<span>01053932409</span><br />
+							</p>
+							<a href="javascript:void(0)" class="freePhoneBoxReturn"  onclick="returnFrontCall()">&lt;返回</a>
+						</li>
+						<li class="failCall">
+							出错啦
+							<p>
+								<span>暂无在线客服</span><br />
+							</p>
+							<a href="javascript:void(0)" class="freePhoneBoxReturn" onclick="returnFrontCall()">&lt;返回</a>
+						</li>
+					</ul>
+				</div>
+				<!---->
+				<div class="pageXinrong_boxMiddle">
+					<h2><span>*</span>姓名：</h2>
+					<input type="text" placeholder="请输入您的姓名"/>
+					<h2><span>*</span>手机：</h2>
+					<input type="text" placeholder="请输入您的手机号"/>
+					<h2>留言：</h2>
+					<textarea placeholder="我想咨询最新报价，请电话告知具体细节"></textarea>
+					<p><button>提交</button></p>
+				</div>
+				<!---->
+				<div class="pageXinrong_boxRight">
+					<div class="pageXinrong_boxRightT">
+						想要了解更多产品详情<br />
+						可点击联系在线客服，进行咨询<br />
+						<button>联系在线客服</button>
+					</div>
+					<div class="pageXinrong_boxRightB">
+						<i></i>
+						<h3>快捷留言：</h3>
+						<ul>
+							<li><span></span>我想咨询最新报价，请电话联系我。</li>
+							<li><span></span>能否发几款热销产品及详细报价？</li>
+							<li><span></span>想要加盟合作，请回电告知具体细节。</li>
+							<li><span></span>可以私人订制吗？急需，请回电！</li>
+							<li><span></span>想了解更多产品，方便参观实物吗？</li>
+							<li><span></span>请问你们工厂在哪里？小批量可以吗？</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//呼叫前
+			$(".frontCall").show().siblings().hide()
+			//呼叫中
+			$(".underwayCall").show().siblings().hide()
+			//呼叫成功
+			$(".successCall").show().siblings().hide()
+			//呼叫失败
+			$(".failCall").show().siblings().hide()
+			
+			//返回呼叫前
+			function returnFrontCall(){
+				$(".frontCall").show().siblings().hide()
+			}
+			//快捷留言
+			$(".pageXinrong_boxRightB ul li").click(function(){
+				$(".pageXinrong_boxMiddle textarea").val($(this).text())
+			})
+			$(function(){
+				if($("body").width()<=768){
+					$('.pageXinrong_boxRightB').css("margin-bottom","10px")
+					$('.pageXinrong_boxRightT').before($(".pageXinrong_boxRightB"));
+				}
+			})
+		</script>
+	</body>
+</html>

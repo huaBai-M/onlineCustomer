@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telphone=no, email=no"/>
+		<title>移动端在线客服</title>
+		<style type="text/css">
+			.movePopup{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba(0,0,0,0.5);
+				display: none;
+				animation: bounceInDown 0.8s ease-out;
+				font-family: "微软雅黑";
+			}
+			.movePopup p,h2,h3,h4{padding: 0;margin: 0;}
+			.movePopup .movePopupSon{
+				width: 80%;
+				background: #fff;
+				padding: 5%;
+				box-sizing: border-box;
+				position: relative;
+				text-align: center;
+				float: none;
+				padding-top: 32px;
+				line-height: 1.5em;
+			}
+			.movePopup .movePopupSon>.movePopuptop{
+				position: absolute;
+			    width: 35px;
+			    height: 100px;
+			    top: -65px;
+			    right: 0;
+			    outline: none;
+			}
+			.movePopup .movePopupSon>a>img{
+				width: 100%;
+			}
+			.movePopup .movePopupSon p{
+				font-size: 18px;
+			    color: #333333;
+			    font-weight: 500;
+			}
+			.movePopup .movePopupSon h2{
+				font-size: 24px;
+			    color: #327bfd;
+			    font-weight: bold;
+			    margin-top: 4px;
+			}
+			.movePopup .movePopupSon h3{
+				color: #999999;
+			    font-size: 15px;
+			    font-weight: 500;
+			    margin-top: 5px;
+			    margin-bottom: 20px;
+			}
+			.movePopup .movePopupSon .movePopupbottom{
+				width: 80%;
+				margin: auto;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border:none;
+				background: #327bfd;
+				color: #fff;
+				font-size: 16px;
+				margin-top: 10px;
+				border-radius: 5px;
+				outline: none;
+				text-decoration: none;
+			}
+			.movePopup .movePopupSon .movePopupbottom img{
+				width:15px;
+				margin-right: 5px;
+			}
+			@keyframes bounceInDown {
+				0% {
+					opacity: 0;
+					-webkit-transform: translateY(-2000px);
+					-ms-transform: translateY(-2000px);
+					transform: translateY(-2000px);
+				}
+				60% {
+					opacity: 1;
+					-webkit-transform: translateY(30px);
+					-ms-transform: translateY(30px);
+					transform: translateY(30px);
+				}
+				80% {
+					-webkit-transform: translateY(-40px);
+					-ms-transform: translateY(-40px);
+					transform: translateY(-40px);
+				}
+				100% {
+					-webkit-transform: translateY(0);
+					-ms-transform: translateY(0);
+					transform: translateY(0);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<button id="abt">打开</button>
+		<div class="movePopup">
+			<div class="movePopupSon">
+				<a href="javascript:void(0)" class="movePopuptop"><img src="img/delMiddle.png"/></a>
+				<p>电话<span id="numberTime">180</span>s后失效</p>
+				<h2>18311001100</h2>
+				<h3>（此号码暂不支持短信收发功能）</h3>
+				<a href="tel:18311001100" class="movePopupbottom"><img src="img/telMiddle.png"/>立即拨打</a>   
+			</div>
+		</div>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".movePopupSon a").click(function(){
+				$(".movePopup").css("display","none")
+				clearInterval(timeSet)
+				$("#numberTime").html(180)
+			})
+			$("#abt").click(function(){
+				$(".movePopup").css("display","flex")
+				time()
+			})
+			var timeSet=null
+			function time(){
+				var index=180
+				timeSet=setInterval(function(){
+						if(index==1){
+							clearInterval(timeSet)
+							$(".movePopup").css("display","none")
+						}
+						index--
+						$("#numberTime").html(index)
+					},1000)
+			}
+		</script>
+	</body>
+</html>
